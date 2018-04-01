@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/vbg">
+    <!--// LinearLayout長寬為300，垂直排列，背景background為round.xml (佈局圓角設置xml)-->
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip"
+        android:background="@drawable/round"
+        android:orientation="vertical"
+        android:padding="10dip">
+        <!--//水平線性佈局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip">
+            <!--//圖片為pic1，未做圓角設置-->
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher" />
+
+            <!--//尚未帶入圖片，在程式內(.java)將會帶入圓角圖，id為img1-->
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!--// TextView帶入文字-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.7"
+            android:padding="10dip"
+            android:text="歡迎來到小黑人的Android教室\n左邊圖---原始圖片！\n右邊圖---圓角圖片！\n圓角幅度可自行設定 ^^"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--//水平線性佈局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dip">
+        <!--//圖片為pic2，未做圓角設置-->
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/glass"
+            android:src="@mipmap/ic_launcher"/>
+
+        <!--//尚未帶入圖片，在程式內(.java)將會帶入圓角圖，id為img2-->
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_gravity="center"
+            android:background="#33FFFFFF"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
